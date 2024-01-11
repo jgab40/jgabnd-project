@@ -1,8 +1,10 @@
-# jgabnd
+# hello-world
 
-👋 Hi, I'm Jean-Gabriel Ndongendeba
+Hello World repository for Git tutorial
+This is an example repository for the Git tutoial on <https://www.w3schools.com>
 
-You've probably never heard of me. And I've never thought writing a README for myself.
-Usually READMEs are written for applications and softwares, but here I'm writting a README about me.
+This tutorial focuses mainly on Git and using GitHub as its remote.
 
-jgabndproject repository contains my website development files. READ ME.
+This repository is built step by step in the tutorial.
+
+It now includes steps for GitHub.
