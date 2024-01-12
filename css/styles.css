@@ -106,6 +106,7 @@ footer a:active{
     background-color: #eee;
 } */
 .content-bg a:link{
+    color: #1A2A6B;
     text-decoration: none;
 }
 .content-bg p:active{
@@ -198,7 +199,7 @@ footer a:active{
 
 /* Projects
 ------------------------------------*/
-.project-item{
+/* .project-item{
     margin: 30px 0;
 }
 .project-item img{
@@ -229,7 +230,7 @@ footer a:active{
         width: 100%;
         margin-bottom: 10px;
     }
-}
+} */
 
 /* EDUCATION
 ---------------------------------------*/
