@@ -1,20 +1,16 @@
 /*
 COLOR PALETTE
 
-Carmine         #96031A
-
-Picton blue     #39A9DB
-Green #4CAF50
 light grey  #b6b3b3
-Smoky black     #14110F 
-White      #F8F8FF
+
 
 -------
 
 link =>  #1A2A6B
-hover => #F2E79C
+btn hover => #F2E79C
 active => #96031A
 footer a:hover => #b6b3b3
+textcolor => #14110F
 
 */
 
@@ -66,24 +62,23 @@ a:active{
     color: #96031A;
 }
 .content-bg a{
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .btn:link{
     color: #F8F8FF;
 }
 footer a:link{
-    color: #1A2A6B;
-    text-decoration: underline;
+    /* color: #1A2A6B;
+    text-decoration: underline; */
 }
 footer a:hover{
-    background-color: #b6b3b3;
-    text-decoration: none;
+    /* background-color: #b6b3b3;
+    text-decoration: none; */
 }
 footer a:active{
-    color: #96031A;
+    /* color: #96031A; */
 
 }
-
 
 .btn{
     background-color: #1A2A6B;
@@ -99,9 +94,13 @@ footer a:active{
     line-height: 1;
     transition: background-color 0.5s;
 }
+.btn:link{
+    text-decoration: none;
+}
 .btn:hover{
     color: #14110F;
     border: 2px solid #1A2A6B;
+    background-color: #F2E79C;
 }
 .btn:active{
     box-shadow: 2px 2px 5px #96031A;
