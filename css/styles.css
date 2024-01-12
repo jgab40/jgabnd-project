@@ -11,7 +11,7 @@ White      #F8F8FF
 
 -------
 
-link => Picton blue     #39A9DB
+link =>  #1A2A6B
 hover => #F2E79C
 active => #96031A
 footer a:hover => #b6b3b3
@@ -55,7 +55,7 @@ h3{
 /* Links */
 
 a:link{
-    color:#F8F8FF;
+    color:#1A2A6B;
     text-decoration: none;
 }
 a:hover{
