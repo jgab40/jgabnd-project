@@ -65,7 +65,9 @@ a:hover{
 a:active{
     color: #96031A;
 }
-
+.btn:link{
+    color: #F8F8FF;
+}
 footer a:link{
     color: #1A2A6B;
     text-decoration: underline;
@@ -95,7 +97,6 @@ footer a:active{
     transition: background-color 0.5s;
 }
 .btn:hover{
-    /* border: #F2E79C; */
     color: #14110F;
     border: 2px solid #1A2A6B;
 }
@@ -105,12 +106,12 @@ footer a:active{
 /* .resume-section > p:active{
     background-color: #eee;
 } */
-.content-bg a:link{
+/* .content-bg a:link{
     text-decoration: none;
-}
-.content-bg p:active{
+} */
+/* .content-bg p:active{
     background-color: #eee;
-}
+} */
 
 
 .content-wrapper{
