@@ -29,7 +29,7 @@
         <main>
           <p>Hello World!</p>
           <p>I'm a Web Developer.</p>
-          <p>Let's work together to bring your ideas to life and make a real impact!<br> My focus is on designing and developing websites that look great and work well.</p>
+          <p>My focus is on designing and developing websites that look great and work well.<br> Let's work together to bring your ideas to life and make a real impact!</p>
           <p>To learn more about my work history, check out my <a href="resume.html"> resume</a>. Feel free to get in touch with me.</p>
           <p id="greeting">Good Day!</p>
         </main>
@@ -53,9 +53,11 @@
     <script>
       let text ="";
       const d = new Date();
-      const hour = d.getHours();
+      const time = d.getHours();
 
-      if (hour < 18) {
+      if (time < 10) {
+        text = `Good Morning!`;
+      } else if (time < 18) {
         text = `Good Day!`;
       } else {
         text = `Good Evening!`;
