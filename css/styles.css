@@ -61,25 +61,9 @@ a:hover{
 a:active{
     color: #96031A;
 }
-.content-bg a{
-    /* text-decoration: underline; */
-}
 .btn:link{
     color: #F8F8FF;
 }
-footer a:link{
-    /* color: #1A2A6B;
-    text-decoration: underline; */
-}
-footer a:hover{
-    /* background-color: #b6b3b3;
-    text-decoration: none; */
-}
-footer a:active{
-    /* color: #96031A; */
-
-}
-
 .btn{
     background-color: #1A2A6B;
     color: white;
@@ -105,17 +89,6 @@ footer a:active{
 .btn:active{
     box-shadow: 2px 2px 5px #96031A;
 }
-/* .resume-section > p:active{
-    background-color: #eee;
-} */
-/* .content-bg a:link{
-    text-decoration: none;
-} */
-/* .content-bg p:active{
-    background-color: #eee;
-} */
-
-
 .content-wrapper{
     margin: 0 auto;
     padding: 30px;
@@ -245,7 +218,6 @@ footer a:active{
 
 /* Certifications 
 ------------------------------------*/
-    /* (Media Queries For Columns) https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
     
     .row{
         display: flex;
@@ -276,7 +248,6 @@ footer a:active{
     
 /* Work experience
 ----------------------------------- */
-    /* Grid Tracks:  https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks#see_also */
     
     .work-item{
         margin: 30px 0;
