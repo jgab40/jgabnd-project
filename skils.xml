@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skillstore>
+    <skill category ="technical">
+        <title>HTML</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+    </skill>
+    <skill category ="technical">
+        <title>CSS</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+    </skill>
+    <skill category ="technical">
+        <title>JavaScript</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+    </skill>
+    <skill category ="technical" type ="databaseDeveloper">
+        <title>Microsoft T-SQL</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education type ="databaseDeveloper"></education>
+        <education type ="databaseDeveloper"></education>
+    </skill>
+    <skill category ="technical" type ="databaseDeveloper">
+        <title>MySQL</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification type ="databaseDeveloper">Lorem ipsum dolor sit.</certification>
+        <education type ="databaseDeveloper"></education>
+    </skill>
+    <skill category ="technical">
+        <title>React</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+    </skill>
+    <skill category ="technical">
+        <title>Version control with Git</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education type ="databaseDeveloper"></education>
+    </skill>
+    <skill category ="business">
+        <title>Bachelor's degree in Accounting</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+    </skill>
+    <skill category ="business">
+        <title>Microsoft Excel</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+        <education></education>
+    </skill>
+    <skill category ="business">
+        <title>Microsoft Word</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <certification>Lorem ipsum dolor sit.</certification>
+        <education></education>
+        <education></education>
+    </skill> 
+</skillstore>
