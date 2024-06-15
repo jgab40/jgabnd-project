@@ -61,7 +61,7 @@ a:hover{
 a:active{
     color: #96031A;
 }
-.btn:link{
+/* .btn:link{
     color: #F8F8FF;
 }
 .btn{
@@ -88,7 +88,7 @@ a:active{
 }
 .btn:active{
     box-shadow: 2px 2px 5px #96031A;
-}
+} */
 .content-wrapper{
     margin: 0 auto;
     padding: 30px;
