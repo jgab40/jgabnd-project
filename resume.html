@@ -31,11 +31,7 @@
         <p>
           I am skilled for developing, testing and debugging responsive
           websites. Problem-solving oriented.<br />
-        </p>
-        <p>I have also knowledge of DBMS.</p>
-        <p>
-          Using web tools and programming languages, I am able to translate user
-          and business needs into a functional front-end design.
+          I have also knowledge of DBMS.
         </p>
         <p>Simply put, I create things that the user sees.</p>
 
@@ -69,7 +65,7 @@
             <p>MS OFFICE</p>
           </div>
         </div>
-        <p>
+        <!-- <p>
           More information can be found at
           <a href="https://github.com/jgab40" target="_blank"
             >my Github profile</a
@@ -80,31 +76,23 @@
             target="_blank"
             >my LinkedIn certifications section.</a
           >
-        </p>
+        </p> -->
+        <p>Click the buttons to find more information.</p>
+        <button onclick="openGitWindow()">My Github profile</button>
+        <button onclick="openLinkedinWindow()">
+          My LinkedIn certifications section
+        </button>
       </section>
 
       <!-- //  EDUCATION  // -->
       <section class="resume-section">
         <!-- Start content edits below this line.  -->
-        <h2>Education</h2>
+        <h2>Navigate between my skills</h2>
 
-        <section class="education-item">
-          <h3>Webdevelopment Training (Jan 2022 - Present)</h3>
-          <p>Full-time program covering HTML, CSS, JavaScript.</p>
-        </section>
-
-        <section class="education-item">
-          <h3>Digitalcity.brussels - Brussels, Belgium</h3>
-          <p>Certified Database Developer, 2019</p>
-        </section>
-
-        <section class="education-item">
-          <h3>
-            EPFC, Enseignement de Promotion et de Formation Continue - Brussels,
-            Belgium
-          </h3>
-          <p>Bachelor's degree in Accounting, 1999</p>
-        </section>
+        <div id="showSkill"></div>
+        <br />
+        <input type="button" onclick="previous()" value="<<" />
+        <input type="button" onclick="next()" value=">>" />
       </section>
 
       <!-- //  HOBBIES  // -->
