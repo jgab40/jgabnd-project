@@ -9,27 +9,27 @@ function openLinkedinWindow() {
 // Navigate Between my skills catalog
 let i = 0;
 let x;
-displayCD(i);
+displaySkill(i);
 
-function displayCD(i) {
+function displaySkill(i) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            myFunction(this, i);
+            myLoadFunction(this, i);
         }
     };
-    xmlhttp.open("GET", "cd_catalog.xml", true);
+    xmlhttp.open("GET", "skills_catalog.xml", true);
     xmlhttp.send();
 }
 
-function myFunction(xml, i) {
+function myLoadFunction(xml, i) {
     var xmlDoc = xml.responseXML; 
-    x = xmlDoc.getElementsByTagName("CD");
-    document.getElementById("showCD").innerHTML =
+    x = xmlDoc.getElementsByTagName("SKILL");
+    document.getElementById("showSkill").innerHTML =
     "Skills covered: " +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "<br>Certifying organizations: " +
     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "<br>Certifying organizations: " +
+    x[i].getElementsByTagName("CERTIF")[0].childNodes[0].nodeValue +
     "<br>Year: " + 
     x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
 }
@@ -37,14 +37,14 @@ function myFunction(xml, i) {
 function next() {
 if (i < x.length-1) {
   i++;
-  displayCD(i);
+  displaySkill(i);
   }
 }
 
 function previous() {
 if (i > 0) {
   i--;
-  displayCD(i);
+  displaySkill(i);
   }
 }
 
