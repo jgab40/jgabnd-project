@@ -175,7 +175,7 @@ a:active {
 
 /* Projects
 ------------------------------------*/
-.project-item {
+/* .project-item {
   margin: 30px 0;
 }
 .project-item img {
@@ -205,7 +205,7 @@ a:active {
     width: 100%;
     margin-bottom: 10px;
   }
-}
+} */
 
 /* Certifications 
 ------------------------------------*/
@@ -233,6 +233,27 @@ a:active {
   .row {
     flex-direction: column;
   }
+}
+
+.resume-section button {
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.resume-section button:hover {
+  background-color: #3e8e41;
+}
+.resume-section button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* EDUCATION
