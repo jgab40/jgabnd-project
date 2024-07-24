@@ -1,3 +1,18 @@
+// Greetings
+function myGreetings() {
+    let text = "";
+    const d = new Date();
+    const time = d.getHours();
+    if (time < 10) {
+        text = `Good Morning!`;
+      } else if (time < 18) {
+        text = `Good Day!`;
+      } else {
+        text = `Good Evening!`;
+      }
+    document.getElementById("greeting").innerHTML = text;
+}
+
 // Opens new browser windows
 function openGitWindow() {
     window.open("https://github.com/jgab40", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
