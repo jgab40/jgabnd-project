@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="script.js"></script>
   </head>
-  <body class="home">
+  <body class="home" onload="myGreetings()">
     <!-- //  INTRO  // -->
     <div class="content-wrapper">
       <div class="content-bg">
@@ -47,11 +47,12 @@
             impact.
           </p>
           <p>
-            For communication or collaboration, feel free to get in touch with me.<br>
+            For communication or collaboration, feel free to get in touch with
+            me.<br />
             To learn more about my work history, check out my
             <a href="resume.html"> resume</a>.
           </p>
-          <p id="greeting">Good Day!</p>
+          <p id="greeting"></p>
         </main>
       </div>
     </div>
@@ -77,21 +78,5 @@
         </li>
       </ul>
     </footer>
-
-    <script>
-      let text = "";
-      const d = new Date();
-      const time = d.getHours();
-
-      if (time < 10) {
-        text = `Good Morning!`;
-      } else if (time < 18) {
-        text = `Good Day!`;
-      } else {
-        text = `Good Evening!`;
-      }
-
-      document.getElementById("greeting").innerHTML = text;
-    </script>
   </body>
 </html>
