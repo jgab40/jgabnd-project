@@ -1,67 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <CATALOG>
     <SKILL>
         <CERTIF>LinkedIn Learning =&gt; Certificate of Completion.</CERTIF>
         <TITLE>HTML &amp; CSS</TITLE>
         <YEAR>2023</YEAR>
-
-        <!-- <title>HTML & CSS</title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
-        <CERTIF>LinkedIn Learning =&gt; Certificate of Completion</CERTIF>
+        <CERTIF>LinkedIn Learning =&gt; Certificate of Completion.</CERTIF>
         <TITLE>JavaScript</TITLE>
         <YEAR>2024</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
         <CERTIF>Digitalcity.brussels + LinkedIn Learning =&gt; Certified Database Developer.</CERTIF>
         <TITLE>Transact-SQL / SQL Server / Database Development</TITLE>
         <YEAR>2019 + 2020</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
         <CERTIF>LinkedIn Learning =&gt; Certificate of Completion.</CERTIF>
         <TITLE>React.js</TITLE>
         <YEAR>2024</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
         <CERTIF>LinkedIn Learning =&gt; Certificate of Completion.</CERTIF>
         <TITLE>Git &amp; Github</TITLE>
         <YEAR>2024</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
-        <CERTIF>EPFC =&gt; Bachelor's degree in Accounting</CERTIF>
+        <CERTIF>EPFC =&gt; Bachelor's degree in Accounting.</CERTIF>
         <TITLE>Accounting</TITLE>
         <YEAR>1999</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
     <SKILL>
-        <CERTIF>EPFC + LinkedIn Learning =&gt; Bachelor's degree + Certificate of Completion</CERTIF>
+        <CERTIF>EPFC + LinkedIn Learning =&gt; Bachelor's degree + Certificate of Completion.</CERTIF>
         <TITLE>MS OFFICE</TITLE>
         <YEAR>1999 + 2021</YEAR>
-
-        <!-- <title></title>
-        <certification></certification>
-        <year></year> -->
     </SKILL>
 </CATALOG>

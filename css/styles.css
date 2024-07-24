@@ -173,40 +173,6 @@ a:active {
   }
 }
 
-/* Projects
-------------------------------------*/
-/* .project-item {
-  margin: 30px 0;
-}
-.project-item img {
-  width: 300px;
-}
-@media screen and (min-width: 905px) {
-  .project-item {
-    display: flow-root;
-  }
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 650px) and (max-width: 905px) {
-  .project-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-  }
-  .project-item img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .project-item img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-} */
-
 /* Certifications 
 ------------------------------------*/
 
@@ -254,6 +220,9 @@ a:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+.column > p:hover {
+  color: #96031a;
 }
 
 /* EDUCATION
