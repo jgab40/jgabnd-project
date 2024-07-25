@@ -202,7 +202,7 @@ a:active {
 }
 
 .resume-section button {
-  padding: 15px 25px;
+  padding: 5px 15px;
   font-size: 15px;
   text-align: center;
   cursor: pointer;
@@ -211,7 +211,7 @@ a:active {
   background-color: #04aa6d;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 5px #999;
 }
 .resume-section button:hover {
   background-color: #3e8e41;
