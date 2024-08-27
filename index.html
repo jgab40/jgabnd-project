@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Jean-Gabriel NDONGENDBA is a Frontend Developer. He also have a bachelor degree in Accounting"
-    />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, web development, website development, freelance web developer"
-    />
-    <meta name="author" content="Jean-Gabriel Mangola NDONGENDEBA S." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jean-Gabriel Mangola NDONGENDEBA SANDA, Front-end Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="script.js"></script>
-  </head>
-  <body class="home" onload="myGreetings()">
-    <!-- //  INTRO  // -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <!-- Start content edits below this line. -->
-          <h1>Jean-Gabriel NDONGENDEBA</h1>
-          <h2>Front-end Developer</h2>
 
-          <!-- End content edits here. -->
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Jean-Gabriel NDONGENDBA is a Frontend Developer. He also have a bachelor degree in Accounting" />
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, web development, website development, freelance web developer" />
+  <meta name="author" content="Jean-Gabriel Mangola NDONGENDEBA S." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean-Gabriel Mangola NDONGENDEBA SANDA, Front-end Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="script.js"></script>
+</head>
 
-        <!-- //  ABOUT ME  // -->
-        <main>
-          <p>Hello World!</p>
-          <p>I'm a Web Developer.</p>
-          <p>
-            My focus is on creating websites and web applications that look
-            great and work well.
-          </p>
-          <p>
-            Let's work together to bring your ideas to life and make a real
-            impact.
-          </p>
-          <p>
-            For communication or collaboration, feel free to get in touch with
-            me.<br />
-            To learn more about my work history, check out my
-            <a href="resume.html"> resume</a>.
-          </p>
-          <p id="greeting"></p>
-        </main>
-      </div>
+<body class="home" onload="myGreetings()">
+  <!-- //  INTRO  // -->
+  <div class="content-wrapper">
+    <div class="content-bg">
+      <header>
+        <!-- Start content edits below this line. -->
+        <h1>Jean-Gabriel NDONGENDEBA</h1>
+        <h2>Front-end Developer</h2>
+
+        <!-- End content edits here. -->
+      </header>
+
+      <!-- //  ABOUT ME  // -->
+      <main>
+        <p>Hello World!</p>
+        <p>I'm a Web Developer.</p>
+        <p>
+          My focus is on creating websites and web applications that look
+          great and work well.
+        </p>
+        <p>
+          Let's work together to bring your ideas to life and make a real
+          impact.
+        </p>
+        <p>
+          For communication or collaboration, feel free to get in touch with
+          me.<br />
+          To learn more about my work history, check out my
+          <a href="resume.html"> resume</a>.
+        </p>
+        <p id="greeting"></p>
+      </main>
     </div>
+  </div>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <p>
-        © 2023 by Jean-Gabriel Mangola NDONGENDEBA SANDA &nbsp; &nbsp; | &nbsp;
-        &nbsp;
-        <a href="mailto:jg.ndongendeba@gmail.com">jg.ndongendeba@gmail.com</a>
-      </p>
+  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+  <footer>
+    <p>
+      © 2023 by Jean-Gabriel Mangola NDONGENDEBA SANDA &nbsp; &nbsp; | &nbsp;
+      &nbsp;
+      <a href="mailto:jg.ndongendeba@gmail.com">jg.ndongendeba@gmail.com</a>
+    </p>
 
-      <ul class="socials">
-        <li>
-          <a href="https://www.linkedin.com/in/jgndongendeba/" target="_blank"
-            ><img src="images/icon-logo-linkedin.png" alt="My LinkedIn profile"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/jgab40" target="_blank"
-            ><img src="images/github_white_icon.png" alt="My Github portfolio"
-          /></a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    <ul class="socials">
+      <li>
+        <a href="https://www.linkedin.com/in/jgndongendeba/" target="_blank"><img src="images/icon-logo-linkedin.png"
+            alt="My LinkedIn profile" /></a>
+      </li>
+      <li>
+        <a href="https://github.com/jgab40" target="_blank"><img src="images/github_white_icon.png"
+            alt="My Github portfolio" /></a>
+      </li>
+    </ul>
+  </footer>
+  <script>
+    // Greetings
+    (function () {
+      let text = "";
+      const d = new Date();
+      const time = d.getHours();
+      if (time < 10) {
+        text = `Good Morning!`;
+      } else if (time < 18) {
+        text = `Good Day!`;
+      } else {
+        text = `Good Evening!`;
+      }
+      document.getElementById("greeting").innerHTML = text;
+    }());
+  </script>
+</body>
+
 </html>
