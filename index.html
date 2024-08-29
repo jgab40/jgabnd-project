@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body class="home" onload="myGreetings()">
@@ -71,22 +71,6 @@
       </li>
     </ul>
   </footer>
-  <script>
-    // Greetings
-    (function () {
-      let text = "";
-      const d = new Date();
-      const time = d.getHours();
-      if (time < 10) {
-        text = `Good Morning!`;
-      } else if (time < 18) {
-        text = `Good Day!`;
-      } else {
-        text = `Good Evening!`;
-      }
-      document.getElementById("greeting").innerHTML = text;
-    }());
-  </script>
 </body>
 
 </html>
