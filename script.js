@@ -53,6 +53,7 @@ function previous() {
   if (i > 0) {
     i--;
     displaySkill(i);
+
   }
 }
 
