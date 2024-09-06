@@ -1,6 +1,16 @@
-import { greetings } from "./greetings_modules.js";
-
-document.getElementById("greeting").innerHTML = greetings();
+(function () {
+  let text = "";
+  const d = new Date();
+  const time = d.getHours();
+  if (time < 10) {
+    text = `Good Morning!`;
+  } else if (time < 18) {
+    text = `Good Day!`;
+  } else {
+    text = `Good Evening!`;
+  }
+  document.getElementById("greeting").innerHTML = text;
+})();
 
 // Opens new browser windows
 let myGitWindow;
@@ -26,44 +36,44 @@ function closeLinkedinWindow() {
   myLinkedinWindow.close();
 }
 
-// Navigate Between my skills catalog
-let i = 0;
-let x;
-displaySkill(i);
+// // Navigate Between my skills catalog
+// let i = 0;
+// let x;
+// displaySkill(i);
 
-function displaySkill(i) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      myLoadFunction(this, i);
-    }
-  };
-  xmlhttp.open("GET", "skills_catalog.xml", true);
-  xmlhttp.send();
-}
+// function displaySkill(i) {
+//   var xmlhttp = new XMLHttpRequest();
+//   xmlhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       myLoadFunction(this, i);
+//     }
+//   };
+//   xmlhttp.open("GET", "skills_catalog.xml", true);
+//   xmlhttp.send();
+// }
 
-function myLoadFunction(xml, i) {
-  var xmlDoc = xml.responseXML;
-  x = xmlDoc.getElementsByTagName("SKILL");
-  document.getElementById("showSkill").innerHTML =
-    "Skills covered: " +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "<br>Certifying organizations: " +
-    x[i].getElementsByTagName("CERTIF")[0].childNodes[0].nodeValue +
-    "<br>Year: " +
-    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
-}
+// function myLoadFunction(xml, i) {
+//   var xmlDoc = xml.responseXML;
+//   x = xmlDoc.getElementsByTagName("SKILL");
+//   document.getElementById("showSkill").innerHTML =
+//     "Skills covered: " +
+//     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+//     "<br>Certifying organizations: " +
+//     x[i].getElementsByTagName("CERTIF")[0].childNodes[0].nodeValue +
+//     "<br>Year: " +
+//     x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+// }
 
-function next() {
-  if (i < x.length - 1) {
-    i++;
-    displaySkill(i);
-  }
-}
+// function next() {
+//   if (i < x.length - 1) {
+//     i++;
+//     displaySkill(i);
+//   }
+// }
 
-function previous() {
-  if (i > 0) {
-    i--;
-    displaySkill(i);
-  }
-}
+// function previous() {
+//   if (i > 0) {
+//     i--;
+//     displaySkill(i);
+//   }
+// }
