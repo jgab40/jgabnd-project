@@ -1,4 +1,4 @@
-(function () {
+const myGreetings = () => {
   let text = "";
   const d = new Date();
   const time = d.getHours();
@@ -10,7 +10,7 @@
     text = `Good Evening!`;
   }
   document.getElementById("greeting").innerHTML = text;
-})();
+};
 
 // Opens new browser windows
 let myGitWindow;
