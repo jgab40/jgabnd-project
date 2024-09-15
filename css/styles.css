@@ -1,269 +1,46 @@
-/*
-COLOR PALETTE
-
-light grey  #b6b3b3
-
-
--------
-
-link =>  #1A2A6B
-btn hover => #F2E79C
-active => #96031A
-footer a:hover => #b6b3b3
-textcolor => #14110F
-
-*/
-
-/* GLOBAL STYLES 
-------------------------------------*/
+body,
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; /* set default 10px */
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-html,
-body {
   height: 100%;
-}
-body {
-  background: #f8f8ff;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.4;
-}
-h1,
-h2,
-h3 {
-  font-family: "Caveat", cursive;
-  font-weight: 400;
   margin: 0;
 }
-h1 {
-  font-size: 6rem;
-  line-height: 0.85;
-}
-h2 {
-  font-size: 3.6rem;
-}
-h3 {
-  font-size: 2.8rem;
-}
-/* Links */
 
-a:link {
-  color: #1a2a6b;
-  text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  color: #96031a;
-}
-/* .btn:link{
-    color: #F8F8FF;
-}
-.btn{
-    background-color: #1A2A6B;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    border: 2px solid #b2def3;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    transition: background-color 0.5s;
-}
-.btn:link{
-    text-decoration: none;
-}
-.btn:hover{
-    color: #14110F;
-    border: 2px solid #1A2A6B;
-    background-color: #F2E79C;
-}
-.btn:active{
-    box-shadow: 2px 2px 5px #96031A;
-} */
-.content-wrapper {
-  margin: 0 auto;
-  padding: 30px;
-  max-width: 900px;
-}
-
-/* HOME
-------------------------------------*/
-.home {
-  background: url(../images/bg-home-office-bookshelf.jpg) no-repeat bottom;
+.bgimg {
+  background-image: url(/forest.jpg);
+  height: 100%;
+  background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
 }
 
-.home .content-wrapper {
-  flex: 1 0 auto;
-}
-
-.content-bg {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000000;
-  padding: 30px;
-}
-
-@media screen and (max-width: 650px) {
-  .home .content-wrapper {
-    padding: 10px;
-  }
-  .content-bg {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .home {
-    background-image: none;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* RESUME
-------------------------------------*/
-.resume header::before {
-  background: url(../images/bg-home-office-bookshelf.jpg) no-repeat;
-  background-position-y: 85%;
-  background-size: cover;
-  content: "";
-  display: block;
-  height: 375px;
-}
-.resume-section {
-  margin-bottom: 50px;
-}
-.resume-section h2 {
-  border-bottom: 2px dashed #b6b3b3;
-}
-.download-link {
-  position: fixed;
-  top: 5px;
-  left: 15px;
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 1200px) {
-  .download-link {
+/* .topleft {
     position: absolute;
-  }
-}
-@media screen and (max-width: 650px) {
-  .resume header::before {
-    height: 200px;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.6rem;
-  }
-}
+    top: 0;
+    left: 16px;
+} */
 
-/* Certifications 
-------------------------------------*/
+/* .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+} */
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.column {
-  flex: 25%;
-  padding: 20px;
+
+span {
+  font-size: 200%;
+  font-weight: bold;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 905px) {
-  .column {
-    flex: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-.resume-section button {
-  padding: 5px 15px;
-  font-size: 15px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04aa6d;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px #999;
-}
-.resume-section button:hover {
-  background-color: #3e8e41;
-}
-.resume-section button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.column > p:hover {
-  color: #96031a;
-}
-
-/* EDUCATION
----------------------------------------*/
-#showSkill {
-  margin-top: 20px;
-}
-
-/* Hobbies
-------------------------------------*/
-
-/* FOOTER
-------------------------------------*/
-footer {
-  background-color: #b6b3b3;
-  color: #14110f;
-}
-.socials {
-  list-style-type: none;
-  padding: 0;
-}
-.socials li {
-  display: inline-block;
-  margin-left: 10px;
-}
-.socials img {
-  width: 32px;
-}
-.socials img:hover {
-  opacity: 0.5;
-}
-@media screen and (min-width: 860px) {
-  footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 859px) {
-  footer {
-    text-align: center;
-    padding: 10px;
-  }
+hr {
+  margin: auto;
+  width: 40%;
 }
