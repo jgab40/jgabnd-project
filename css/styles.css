@@ -32,3 +32,14 @@ hr {
   margin: auto;
   width: 40%;
 }
+
+a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.icons {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
