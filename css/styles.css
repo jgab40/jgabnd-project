@@ -33,6 +33,14 @@ hr {
   width: 40%;
 }
 
+/* .icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+} */
+
 .icons {
   position: absolute;
   bottom: 0;
