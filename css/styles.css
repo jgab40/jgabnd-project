@@ -30,6 +30,10 @@ span {
   font-weight: bold;
 }
 
+p + p {
+  font-size: 2rem;
+}
+
 hr {
   margin: auto;
   width: 40%;
