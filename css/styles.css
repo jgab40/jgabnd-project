@@ -4,12 +4,15 @@ html {
   margin: 0;
 }
 
+body {
+  font: 1.5rem "Montserrat", sans-serif;
+}
+
 .bgimg {
   background: url(/images/forest.webp) no-repeat center center / cover;
   height: 100%;
   position: relative;
   color: #ffffff;
-  font: 1.5rem "Courier New", monospace;
 }
 
 .middle,
