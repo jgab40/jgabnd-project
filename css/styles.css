@@ -5,8 +5,7 @@ html {
 }
 
 .bgimg {
-  background: url(/forest.jpg) no-repeat center;
-  background-size: cover;
+  background: url(/forest.jpg) no-repeat center center/cover;
   height: 100%;
   position: relative;
   color: #ffffff;
