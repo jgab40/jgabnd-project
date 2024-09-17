@@ -1,13 +1,16 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body,
 html {
   height: 100%;
   margin: 0;
 }
 
+/* Add a font */
 body {
   font: 1.5rem "Montserrat", sans-serif;
 }
 
+/* Background image */
 .bgimg {
   background: url(/images/forest.webp) no-repeat center center / cover;
   height: 100%;
@@ -21,6 +24,7 @@ body {
   left: 50%;
 }
 
+/* Position text in the middle */
 .middle {
   top: 50%;
   translate: -50% -50%;
@@ -36,11 +40,13 @@ p + p {
   font-size: 2rem;
 }
 
+/* Style the <hr> element */
 hr {
   margin: auto;
   width: 40%;
 }
 
+/* Position icons at the bottom */
 .icons {
   bottom: 0;
   translate: -50% -25%;
