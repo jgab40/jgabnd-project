@@ -36,7 +36,6 @@ hr {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -25%);
-  text-align: center;
 }
 .icons a:hover {
   opacity: 0.5;
