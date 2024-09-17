@@ -5,21 +5,22 @@ html {
 }
 
 .bgimg {
-  background-image: url(/forest.jpg);
+  background: url(/images/forest.webp) no-repeat center center / cover;
   height: 100%;
-  background-position: center;
-  background-size: cover;
   position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  color: #ffffff;
+  font: 1.5rem "Courier New", monospace;
+}
+
+.middle,
+.icons {
+  position: absolute;
+  left: 50%;
 }
 
 .middle {
-  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  translate: -50% -50%;
   text-align: center;
 }
 
@@ -28,18 +29,25 @@ span {
   font-weight: bold;
 }
 
+p + p {
+  font-size: 2rem;
+}
+
 hr {
   margin: auto;
   width: 40%;
 }
 
 .icons {
-  position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  text-align: center;
+  translate: -50% -25%;
 }
+
+a {
+  font-size: 3rem;
+  color: #ff0000;
+}
+
 .icons a:hover {
   opacity: 0.5;
 }
