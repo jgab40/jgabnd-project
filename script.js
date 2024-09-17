@@ -24,7 +24,7 @@ const countDownFunction = setInterval(function () {
     "myCounter"
   ).innerHTML = `${days}d ${hours}h ${minutes}m ${secondes}s `;
 
-  // Some text if the count down is over, write some text
+  // Some text if the count down is over
   if (distance < 0) {
     clearInterval(countDownFunction);
     document.getElementById("myCounter").innerHTML = `EXPIRED`;
