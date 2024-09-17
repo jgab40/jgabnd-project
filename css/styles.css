@@ -44,6 +44,12 @@ hr {
   left: 50%;
   transform: translate(-50%, -25%);
 }
+
+a {
+  font-size: 3rem;
+  color: #ff0000;
+}
+
 .icons a:hover {
   opacity: 0.5;
 }
