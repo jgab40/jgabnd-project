@@ -20,8 +20,8 @@ const countDownFunction = setInterval(function () {
   console.log(secondes);
 
   // Output the result in an element with id="myCounter"
-  document.getElementById(
-    "myCounter"
+  document.querySelector(
+    "#myCounter"
   ).innerHTML = `${days}d ${hours}h ${minutes}m ${secondes}s `;
 
   // Some text if the count down is over
