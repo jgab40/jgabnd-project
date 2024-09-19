@@ -1,8 +1,9 @@
+// SET COMING WITH COUNTDOWN
 // Set the date we're counting down to
 let countDowndDate = new Date("September 22, 2024 16:00:00").getTime();
 
 // Update the count down every 1 second
-const countDownFunction = setInterval(function () {
+const countDownFunction = setInterval(() => {
   // Get todays date and time
   let now = new Date().getTime();
 
@@ -11,13 +12,9 @@ const countDownFunction = setInterval(function () {
 
   // Time calculations for days, hours, minutes and seconds
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  console.log(days);
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  console.log(hours);
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  console.log(minutes);
   let secondes = Math.floor((distance % (1000 * 60)) / 1000);
-  console.log(secondes);
 
   // Output the result in an element with id="myCounter"
   document.querySelector(
@@ -30,3 +27,5 @@ const countDownFunction = setInterval(function () {
     document.getElementById("myCounter").innerHTML = `EXPIRED`;
   }
 }, 1000);
+
+// Set flashing paragraphs
