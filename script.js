@@ -1,6 +1,6 @@
 // SET COMING WITH COUNTDOWN
 // Set the date we're counting down to
-let countDowndDate = new Date("September 22, 2024 16:00:00").getTime();
+let countDowndDate = new Date("September 26, 2024 16:00:00").getTime();
 
 // Update the count down every 1 second
 const countDownFunction = setInterval(() => {
@@ -24,8 +24,22 @@ const countDownFunction = setInterval(() => {
   // Some text if the count down is over
   if (distance < 0) {
     clearInterval(countDownFunction);
-    document.getElementById("myCounter").innerHTML = `EXPIRED`;
+    document.querySelector("#myCounter").innerHTML = `EXPIRED`;
   }
 }, 1000);
 
 // Set flashing paragraphs
+
+const flashPara = setInterval(function () {
+  document.querySelector(".flashing").style.cssText =
+    "border:2px dashed green;color:white;";
+  document.querySelector("#myCounter.flashing").style.cssText =
+    "border:2px dashed green;color:white;";
+}, 1000);
+
+const flashParaW = setInterval(function () {
+  document.querySelector(".flashing").style.cssText =
+    "border:2px dashed white;color:white;";
+  document.querySelector("#myCounter.flashing").style.cssText =
+    "border:2px dashed white;color:white;";
+}, 2000);
