@@ -22,7 +22,7 @@ const countDownFunction = setInterval(() => {
   }
 }, 1000);
 
-// Set flashing paragraphs
+// Setting flashing paragraph
 
 const flashingGradient = setInterval(function () {
   document.querySelector(".flashing").style.cssText =
