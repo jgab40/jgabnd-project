@@ -25,9 +25,9 @@ const countDownFunction = setInterval(() => {
 // Setting flashing paragraph
 
 const flashingGradient = setInterval(function () {
-  document.querySelector(".flashing").style.cssText =
+  document.querySelector("p+p").style.cssText =
     "background-image: linear-gradient(to right, #f83600, #f9d423);";
 }, 1000);
 const flashingWhite = setInterval(function () {
-  document.querySelector(".flashing").style.cssText = "color: #ffffff;";
+  document.querySelector("p+p").style.cssText = "color: #ffffff;";
 }, 2000);
