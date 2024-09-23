@@ -65,3 +65,10 @@ a {
   display: inline-block;
   margin-right: 90px;
 }
+
+/* Creating a Linear Text Gradient */
+p + p {
+  color: transparent;
+  background-image: linear-gradient(to right, #f83600, #f9d423);
+  background-clip: text;
+}
