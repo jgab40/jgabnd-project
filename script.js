@@ -1,4 +1,4 @@
-// SET COMING WITH COUNTDOWN
+// SETTING COUNTDOWN TIMER FOR COMING SOON MESSAGE
 // Set the date we're counting down to
 let countDowndDate = new Date("September 26, 2024 16:00:00").getTime();
 
@@ -32,7 +32,7 @@ const countDownFunction = setInterval(() => {
 
 const flashPara = setInterval(function () {
   document.querySelector(".flashing").style.cssText =
-    "border:2px dashed green;color:white;";
+    "color: transparent; backgroundImage: url(/)";
   document.querySelector("#myCounter.flashing").style.cssText =
     "border:2px dashed green;color:white;";
 }, 1000);
@@ -43,3 +43,5 @@ const flashParaW = setInterval(function () {
   document.querySelector("#myCounter.flashing").style.cssText =
     "border:2px dashed white;color:white;";
 }, 2000);
+
+// STYLING FLASHING PARAGRAPH
