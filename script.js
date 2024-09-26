@@ -1,6 +1,6 @@
 // Setting countdown timer for coming soon message
 
-let countDowndDate = new Date("September 26, 2024 16:00:00").getTime();
+let countDowndDate = new Date("September 29, 2024 16:00:00").getTime();
 
 const countDownFunction = setInterval(() => {
   let now = new Date().getTime();
