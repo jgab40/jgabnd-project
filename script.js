@@ -1,11 +1,11 @@
 // Setting countdown timer for coming soon message
 
-let countDowndDate = new Date("September 29, 2024 16:00:00").getTime();
+let countDownDate = new Date("September 29, 2024 16:00:00").getTime();
 
 const countDownFunction = setInterval(() => {
   let now = new Date().getTime();
 
-  let distance = countDowndDate - now;
+  let distance = countDownDate - now;
 
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
