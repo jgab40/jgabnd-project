@@ -1,6 +1,18 @@
+// Create a drop-down button for a navigation sidebar
+
+const dropButton = document
+  .querySelector("#myBtn")
+  .addEventListener("click", function () {
+    myToggle();
+  });
+
+const myToggle = () => {
+  document.querySelector("#myDropdown").classList.toggle("show");
+};
+
 // Setting countdown timer for coming soon message
 
-let countDownDate = new Date("September 29, 2024 16:00:00").getTime();
+let countDownDate = new Date("October 3, 2024 16:00:00").getTime();
 
 const countDownFunction = setInterval(() => {
   let now = new Date().getTime();
