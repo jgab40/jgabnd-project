@@ -17,6 +17,6 @@ function NavMenu() {
     </>
   );
 }
-const container = document.querySelector("#navRoot");
+const container = document.querySelector("#root");
 const root = ReactDOM.createRoot(container);
 root.render(<NavMenu />);
