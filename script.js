@@ -10,36 +10,38 @@ const myToggle = () => {
   document.querySelector("#myDropdown").classList.toggle("show");
 };
 
-// Setting countdown timer for coming soon message
+// Setting  timer for coming soon message
 
-let countDownDate = new Date("May 06, 2025 16:00:00").getTime();
+const timeHandler = setInterval(setTime, 1000);
 
-const countDownFunction = setInterval(() => {
-  let now = new Date().getTime();
+function setTime() {
+  let timeStart = new Date().getTime();
+  let timeEnd = new Date(2025, 4, 6, 16).getTime();
+  let timeDuration = timeEnd - timeStart;
 
-  let distance = countDownDate - now;
-
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let secondes = Math.floor((distance % (1000 * 60)) / 1000);
+  let days = Math.floor(timeDuration / (1000 * 60 * 60 * 24));
+  let hours = Math.floor(
+    (timeDuration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  let minutes = Math.floor((timeDuration % (1000 * 60 * 60)) / (1000 * 60));
+  let secondes = Math.floor((timeDuration % (1000 * 60)) / 1000);
 
   document.querySelector(
     "#myCounter"
   ).innerHTML = `${days}d ${hours}h ${minutes}m ${secondes}s `;
 
-  if (distance < 0) {
-    clearInterval(countDownFunction);
+  if (timeDuration < 0) {
+    clearInterval(timeHandler);
     document.querySelector("#myCounter").innerHTML = `EXPIRED`;
   }
-}, 1000);
+}
 
-// Setting flashing paragraph
+// Setting color
 
-const flashingGradient = setInterval(function () {
-  document.querySelector("p+p").style.cssText =
-    "background-image: linear-gradient(to right, #f83600, #f9d423);";
-}, 1000);
-const flashingWhite = setInterval(function () {
-  document.querySelector("p+p").style.cssText = "color: #ffffff;";
-}, 2000);
+const colorHandler = setInterval(setColor, 1000);
+
+function setColor() {
+  let element = document.getElementById("colorText");
+  element.style.backgroundColor =
+    element.style.backgroundColor == "lightblue" ? "white" : "lightblue";
+}
