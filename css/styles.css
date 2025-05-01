@@ -114,9 +114,9 @@ a {
   margin-right: 90px;
 }
 
-/* Creating a Linear Text Gradient */
+/* Clipping text */
 p + p {
   color: transparent;
-  background-image: linear-gradient(to right, #f83600, #f9d423);
+  /* background-image: linear-gradient(to right, #f83600, #f9d423); */
   background-clip: text;
 }
