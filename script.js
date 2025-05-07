@@ -16,7 +16,7 @@ const timeHandler = setInterval(setTime, 1000);
 
 function setTime() {
   let timeStart = new Date().getTime();
-  let timeEnd = new Date(2025, 4, 6, 16).getTime();
+  let timeEnd = new Date(2025, 5, 6, 16).getTime();
   let timeDuration = timeEnd - timeStart;
 
   let days = Math.floor(timeDuration / (1000 * 60 * 60 * 24));
