@@ -12,7 +12,7 @@ const myToggle = () => {
 
 // Setting countdown timer for coming soon message
 
-let countDownDate = new Date("May 06, 2025 16:00:00").getTime();
+let countDownDate = new Date("May 18, 2025 16:00:00").getTime();
 
 const countDownFunction = setInterval(() => {
   let now = new Date().getTime();
